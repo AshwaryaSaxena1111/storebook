@@ -4,7 +4,7 @@ import { Select, MenuItem, InputLabel, FormControl } from "@mui/material";
 const DropDown = () => {
     return (
         <FormControl sx={{ marginTop: 50 }}>
-            <InputLabel>Select</InputLabel>
+            <InputLabel>{Select}</InputLabel>
             <Select
                 sx={{
                     width: 250,

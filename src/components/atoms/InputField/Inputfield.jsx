@@ -1,8 +1,7 @@
-import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
-export default function BasicTextFields({backgroundColor}) {
+export default function BasicTextFields({ backgroundColor, label, type }) {
   return (
     <Box
       component="form"
@@ -11,10 +10,8 @@ export default function BasicTextFields({backgroundColor}) {
       }}
       noValidate
       autoComplete="off"
-
     >
-    <TextField style={backgroundColor && { backgroundColor }} />
-    
+      <TextField type={type} label={label} /> {/* Set the type prop */}
     </Box>
   );
 }
